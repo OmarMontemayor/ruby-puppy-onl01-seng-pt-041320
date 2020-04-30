@@ -6,7 +6,7 @@ class Dog
   @@all = []
   def initialize(name)
     @name = name
-    @@all << self
+    self.save
   end
   def self.all
     @@all
@@ -16,8 +16,8 @@ class Dog
   end
   def self.print_all
     @@all.to_s
-    binding.pry
   end
   def self.save
-    
+    @@all << self
+  end
 end
