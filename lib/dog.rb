@@ -7,6 +7,7 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
+    binding.pry
   end
   def self.all
     @@all
@@ -16,6 +17,5 @@ class Dog
   end
   def self.print_all
     @@all.to_s
-    binding.pry
   end
 end
