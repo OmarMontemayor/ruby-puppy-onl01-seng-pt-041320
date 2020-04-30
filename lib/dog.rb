@@ -18,4 +18,6 @@ class Dog
     @@all.to_s
     binding.pry
   end
+  def self.save
+    
 end
