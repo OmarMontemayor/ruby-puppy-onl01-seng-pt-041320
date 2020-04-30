@@ -7,6 +7,7 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
+    binding.pry
   end
   def self.all
     @@all
@@ -15,5 +16,8 @@ class Dog
     @@all.clear
   end
   def self.print_all
-    puts "#{@@all.to_s.match(@name)}"
+    @@all.each do |object| 
+      dog_name = object.find("#{@name}")
+    end
+  end
 end
