@@ -1,4 +1,5 @@
 # Add your code here
+require 'pry'
 class Dog
   attr_accessor :name
   
@@ -14,6 +15,7 @@ class Dog
     @@all.clear
   end
   def self.print_all
-    puts "#{@@all.to_s}"
+    @@all.to_s
+    binding.pry
   end
 end
