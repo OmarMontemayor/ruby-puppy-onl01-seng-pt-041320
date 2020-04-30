@@ -17,7 +17,7 @@ class Dog
   end
   def self.print_all
     @@all.each do |object| 
-      dog_name = object.find("#{@name}")
+      object.find("#{@name}")
     end
   end
 end
