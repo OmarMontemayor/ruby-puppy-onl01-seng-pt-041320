@@ -17,7 +17,7 @@ class Dog
   def self.print_all
     i = 0
     while i < @@all.length
-      puts "#{@@all.to_s.any(@name)}"
+      puts "#{@@all.to_s.match(@name)}"
       i += 1
     end
   end
