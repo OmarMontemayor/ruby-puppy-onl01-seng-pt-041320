@@ -2,7 +2,9 @@
 require 'pry'
 class Dog
   attr_accessor :name
-  
+  def self.save
+    @@all << self
+  end 
   @@all = []
   def initialize(name)
     @name = name
