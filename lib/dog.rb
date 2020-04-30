@@ -16,6 +16,6 @@ class Dog
     @@all.clear
   end
   def self.print_all
-    @@all.to_s.match(@name)
+    puts "#{@@all.to_s.match(@name)}"
   end
 end
