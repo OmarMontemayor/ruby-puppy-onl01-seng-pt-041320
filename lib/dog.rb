@@ -16,8 +16,8 @@ class Dog
     @@all.clear
   end
   def self.print_all
-    @@all.each do |object| 
-      object.find("#{@name}")
+    @@all.each do |dog|
+      puts dog.name
     end
   end
 end
